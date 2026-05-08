@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <title>Omar & Esraa | Wedding Celebration</title>
+    <meta name="description" content="Join us to celebrate the wedding of Omar and Esraa.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Great+Vibes&family=Lora:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- WAX SEAL SCREEN -->
+<div id="seal-screen">
+    <p class="seal-pre">You have received a wedding invitation</p>
+    <div class="seal-wrap">
+        <div class="wax-seal" id="sealBtn" onclick="openInvitation()" title="Tap to open">
+            <img src="./image/image-removebg-preview.png" alt="Omar & Esraa invitation seal" style="width: 100%; height: 100%; object-fit: contain; display: block;" />
+        </div>
+        <p class="seal-hint">— tap to open —</p>
+    </div>
+</div>
+
+<!-- MAIN INVITATION -->
+<div id="invitation" style="display:none; opacity:0">
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-logo">O <span class="amp">&</span> E</div>
+        <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#story">Our Story</a></li>
+            <li><a href="#details">Details</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <!-- <li><a href="#rsvp" class="btn-primary">RSVP</a></li> -->
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header id="home" class="hero">
+        <div class="hero-bg parallax"></div>
+        <div class="hero-overlay"></div>
+        <div class="hero-content reveal fade-up">
+            <h3 class="hero-subtitle">Together with their families</h3>
+            <h1 class="hero-title">Omar <br><span class="amp">&</span> Esraa</h1>
+            <p class="hero-date">june 9, 2026</p>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll</span>
+            <div class="line"></div>
+        </div>
+    </header>
+
+    <!-- Countdown Section -->
+    <section class="countdown-section">
+        <div class="container">
+            <p class="countdown-label">Counting the days to our forever</p>
+            <div class="countdown-grid">
+                <div class="c-unit">
+                    <span class="c-num" id="cd-days">—</span>
+                    <span class="c-lbl">Days</span>
+                </div>
+                <div class="c-sep">♦</div>
+                <div class="c-unit">
+                    <span class="c-num" id="cd-hours">—</span>
+                    <span class="c-lbl">Hours</span>
+                </div>
+                <div class="c-sep">♦</div>
+                <div class="c-unit">
+                    <span class="c-num" id="cd-mins">—</span>
+                    <span class="c-lbl">Minutes</span>
+                </div>
+                <div class="c-sep">♦</div>
+                <div class="c-unit">
+                    <span class="c-num" id="cd-secs">—</span>
+                    <span class="c-lbl">Seconds</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Event Details Section -->
+    <section id="details" class="section details-bg">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">When & Where</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="details-grid">
+                <div class="detail-card reveal fade-up">
+                    <h3 class="serif">Katb El-Ketab</h3>
+                    <p class="date">May 9, 2026</p>
+                    <p class="time"> 6:00 PM</p>
+                     <p class="time"> 8:00 PM</p>
+                    <p class="location">دار مأذونية شبين الكوم</p>
+                    <p class="address">Al-Rawda Mosque</p>
+                    <a class="detail-map-btn" href="https://maps.app.goo.gl/qW2d9Eqku1oXG6hVA" target="_blank">Get Directions ↗</a>
+                </div>
+                <div class="detail-card reveal fade-up" style="transition-delay: 0.2s;">
+                    <h3 class="serif">Wedding Party</h3>
+                    <p class="date">June 9, 2026</p>
+                    <p class="time">6:00 PM</p>
+                    <p class="location">Deva hall</p>
+                    <p class="address">Al Shohada, El Menofia</p>
+                    <a class="detail-map-btn" href="https://maps.app.goo.gl/ND5oaBgYgnA47tVA9" target="_blank">Get Directions ↗</a>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin: 0 0 3rem;">
+                <a class="cal-btn" href="data:text/calendar;charset=utf-8,BEGIN:VCALENDAR%0AVERSION:2.0%0ABEGIN:VEVENT%0ADTSTART:20260502T180000Z%0ADTEND:20260503T000000Z%0ASUMMARY:Laila%20%26%20Kareem%27s%20Wedding%0ALOCATION:Armed%20Forces%20Hotel%2C%20Al%20Arish%0ADESCRIPTION:Wedding%20Celebration%0AEND:VEVENT%0AEND:VCALENDAR" download="laila-kareem-wedding.ics">📅 Add to Calendar</a>
+            </div>
+
+            <div class="map-container reveal fade-up" style="transition-delay: 0.3s;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d735.6950794072524!2d30.913056707400347!3d30.598589084328108!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14f7d50074554823%3A0x6df671b35366a59b!2z2YLYp9i52Ycg2K_ZitmB2Kc!5e0!3m2!1sar!2seg!4v1777546593633!5m2!1sar!2seg" width="200" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Our Story Section -->
+    <section id="story" class="section story-bg">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">The Story</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item reveal fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>First Meeting</h3>
+                        <p class="date">Spring 2019</p>
+                        <p>Under the canopy of the old oak tree at the botanical garden, a chance encounter blossomed into a beautiful conversation.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>The Engagement</h3>
+                        <p class="date">June 10, 2022</p>
+                        <p>Coffee turned into dinner, dinner turned into a moonlit walk. We knew from that day that this was something extraordinary.</p>
+                    </div>
+                </div>
+                <div class="timeline-item reveal fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <h3>Katb El-Ketab</h3>
+                        <p class="date">may 9, 2026</p>
+                        <p>Under the warmth of the summer sun, our story began A simple moment that changed our lives forever.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Gallery Section — Slideshow -->
+    <section id="gallery" class="section gallery-bg">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">Moments</h2>
+                <div class="divider"></div>
+            </div>
+
+            <div class="slideshow reveal fade-up">
+                <div class="slideshow-track" id="slideshowTrack">
+                    <div class="slide active">
+                        <img src="https://look.jmgbb.com/images/sKCp0FD3we.jpg" alt="Rings">
+                        <div class="slide-caption">
+                            <span class="slide-title">The flowers</span>
+                            <span class="slide-sub">A symbol of forever</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://look.jmgbb.com/images/rqYjp8THVK.jpg" alt="Couple walking">
+                        <div class="slide-caption">
+                            <span class="slide-title">Together</span>
+                            <span class="slide-sub">Every step, side by side</span>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <img src="https://look.jmgbb.com/images/KE3NlnoynP.jpg" alt="Dress details">
+                        <div class="slide-caption">
+                            <span class="slide-title"> Me & U</span>
+                            <span class="slide-sub">Crafted with love</span>
+                        </div>
+                
+                    </div>
+                </div>
+
+                <div class="slideshow-controls">
+                    <button class="slide-btn" onclick="changeSlide(-1)" aria-label="Previous">&#8592;</button>
+                    <div class="slide-dots" id="slideDots"></div>
+                    <button class="slide-btn" onclick="changeSlide(1)" aria-label="Next">&#8594;</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section faq-bg">
+        <div class="container">
+            <div class="section-header reveal fade-up">
+                <h2 class="section-title">Good to Know</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item reveal fade-up">
+                    <button class="faq-q" onclick="toggleFaq(this)"><span>Is parking available at the venue?</span><span class="faq-arrow">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">Yes! Complimentary valet parking is available for all wedding guests at the main entrance. Let the attendant know you are a guest at the Laila & Kareem wedding.</div></div>
+                </div>
+                <div class="faq-item reveal fade-up">
+                    <button class="faq-q" onclick="toggleFaq(this)"><span>Are children welcome?</span><span class="faq-arrow">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">We love your little ones! Children are warmly welcome. Please note their attendance in your RSVP so we can arrange appropriate seating and a kids' menu.</div></div>
+                </div>
+                
+                <div class="faq-item reveal fade-up">
+                    <button class="faq-q" onclick="toggleFaq(this)"><span>Can I take photos during the ceremony?</span><span class="faq-arrow">+</span></button>
+                    <div class="faq-a"><div class="faq-a-inner">We kindly ask for an unplugged ceremony — please keep phones away during the vows. Our photographers will capture every moment. Feel free to snap away during the reception!</div></div>
+                </div>
+              
+            </div>
+        </div>
+    </section>
+
+    
+
+    <!-- Footer -->
+    <footer class="footer section story-bg" style="padding: 4rem 0 2rem 0; text-align: center;">
+        <div class="container">
+            <h2 class="nav-logo" style="margin-bottom: 1rem;">O<span class="amp">&</span> E </h2>
+            <div class="footer-divider"></div>
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-top:1rem;">Made with love for june 9, 2026</p>
+        </div>
+    </footer>
+
+</div><!-- /invitation -->
+
+<!-- Music FAB -->
+<div class="music-fab" id="musicFab" onclick="toggleMusic()" style="display:none" title="Toggle music">
+    <div class="music-bars" id="musicBars">
+        <span></span><span></span><span></span><span></span>
+    </div>
+</div>
+<audio id="bgMusic" loop>
+    <source src="https://serv100.albumaty.com/2025/Albumaty.Com_tww_lyt_hsyny.mp3" type="audio/mpeg"/>
+</audio>
+
+<script src="script.js"></script>
+</body>
+</html>
